@@ -1,0 +1,39 @@
+{
+  "author": "Kitson P. Kelly <me@kitsonkelly.com> (http://www.kitsonkelly.com)",
+  "name": "parking",
+  "description": "A Watermark Mobile Parking Application",
+  "version": "0.0.1",
+  "repository": {
+    "url": "https://github.com/kitsonk/parking"
+  },
+  "main": "server",
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/kitsonk/parking/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "express": "~3.1.0",
+    "stylus": "~0.32.1",
+    "jade": "~0.28.2",
+    "colors": "~0.6.0-1",
+    "nib": "~0.9.1"
+  },
+  "volo": {
+    "baseDir": "src",
+    "dependencies": {
+      "dojo": "github:dojo/dojo/1.8.3",
+      "dijit": "github:dojo/dijit/1.8.3",
+      "dojox": "github:dojo/dojox/1.8.3",
+      "util": "github:dojo/util/1.8.3",
+      "setten": "github:kitsonk/setten/0.1.5"
+    }
+  },
+  "dojoBuild": "package.js"
+}
