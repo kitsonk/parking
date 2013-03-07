@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-src/dojo
 src/dojox
 src/dijit
 src/util
