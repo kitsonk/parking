@@ -1,0 +1,36 @@
+doctype 5
+html
+  head
+    block head
+    block title
+      title #{title}
+
+    block css
+      link(rel="stylesheet", type="text/css", href="/_static/css/main.css", media="all")
+
+    block config
+      script(type="text/javascript")
+        dojoConfig = {
+          async: 1,
+          baseUrl: '#{base}',
+          mblAlwaysHideAddressBar: true,
+          packages: [{
+            name: 'dojo',
+            location: 'dojo'
+          }, {
+            name: 'dijit',
+            location: 'dijit'
+          }, {
+            name: 'dojox',
+            location: 'dojox'
+          }, {
+            name: 'parking-client',
+            location: 'parking-client'
+          }],
+          deps: [ '#{load}' ]
+        };
+
+    script(type='text/javascript', src='#{base}/dojo/dojo.js')
+
+  body(style='visibility:hidden;')
+    block content

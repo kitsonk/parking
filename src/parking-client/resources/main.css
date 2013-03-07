@@ -1,0 +1,47 @@
+@import url("../../dojox/mobile/themes/iphone/iphone.css");
+.floatCenter {
+  float: center;
+}
+.tabBarBottom {
+  border-bottom: none;
+}
+li.blue {
+  background-color: #00f;
+}
+li.brown {
+  background-color: #a52a2a;
+}
+li.green {
+  background-color: #008000;
+}
+li.orange {
+  background-color: #ffa500;
+}
+li.purple {
+  background-color: #800080;
+}
+li.red {
+  background-color: #f00;
+}
+li.yellow {
+  background-color: #ff0;
+}
+li.grey {
+  background-color: #808080;
+}
+li.blue,
+li.brown,
+li.green,
+li.purple,
+li.red,
+li.grey {
+  color: #fff;
+}
+li.blue .mblListItemRightText,
+li.brown .mblListItemRightText,
+li.green .mblListItemRightText,
+li.purple .mblListItemRightText,
+li.red .mblListItemRightText,
+li.grey .mblListItemRightText {
+  color: #fff;
+}

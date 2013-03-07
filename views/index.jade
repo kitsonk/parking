@@ -1,0 +1,42 @@
+extends layout
+
+block head
+  meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+
+prepend config
+  load = 'parking-client/main'
+
+block content
+  div(data-dojo-type='dojox/mobile/View', data-dojo-props='keepScrollPos: false')
+    h1(data-dojo-type='dojox/mobile/Heading', data-dojo-props='fixed:"top"')
+      span.floatCenter Parking at Watermark
+    h1(data-dojo-type='dojox/mobile/Heading', data-dojo-props='fixed:"top"')
+      ul(data-dojo-type='dojox/mobile/TabBar', data-dojo-props='barType:"segmentedControl"')
+        li(data-dojo-type='dojox/mobile/TabBarButton', data-dojo-props='moveTo:"selectColour",transition:"slide",transitionDir:-1,selected:true') Today
+        li(data-dojo-type='dojox/mobile/TabBarButton') Next Week
+        li(data-dojo-type='dojox/mobile/TabBarButton', data-dojo-props='moveTo:"allColours",transition:"slide"') All Colours
+    div#selectColour(data-dojo-type='dojox/mobile/ScrollableView')
+      h2(data-dojo-type='dojox/mobile/RoundRectCategory') Pass Color
+      ul.list1(data-dojo-type='dojox/mobile/RoundRectList')
+        li.blue(data-dojo-type='dojox/mobile/ListItem') Blue
+        li.brown(data-dojo-type='dojox/mobile/ListItem') Brown
+        li.green(data-dojo-type='dojox/mobile/ListItem') Green
+        li.orange(data-dojo-type='dojox/mobile/ListItem') Orange
+        li.purple(data-dojo-type='dojox/mobile/ListItem') Purple
+        li.red(data-dojo-type='dojox/mobile/ListItem') Red
+        li.white(data-dojo-type='dojox/mobile/ListItem') White
+        li.yellow(data-dojo-type='dojox/mobile/ListItem') Yellow
+        li.grey(data-dojo-type='dojox/mobile/ListItem') Grey
+    div#allColours(data-dojo-type='dojox/mobile/ScrollableView')
+      h2(data-dojo-type='dojox/mobile/RoundRectCategory') Pass Color
+      ul.list1(data-dojo-type='dojox/mobile/RoundRectList')
+        li.blue(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Watermark"') Blue
+        li.brown(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Simpson"') Brown
+        li.green(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Watermark"') Green
+        li.orange(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Simpson"') Orange
+        li.purple(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Watermark"') Purple
+        li.red(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Watermark"') Red
+        li.white(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Simpson"') White
+        li.yellow(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Watermark"') Yellow
+        li.grey(data-dojo-type='dojox/mobile/ListItem', data-dojo-props='rightText:"Sky 4"') Grey

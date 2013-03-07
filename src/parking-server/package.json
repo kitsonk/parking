@@ -1,0 +1,13 @@
+{
+  "author": "Kitson P. Kelly <me@kitsonkelly.com> (http://www.kitsonkelly.com)",
+  "name": "parking-server",
+  "description": "A Watermark Mobile Parking Application",
+  "version": "0.0.1",
+  "main": "main",
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/kitsonk/parking/blob/master/LICENSE"
+    }
+  ]
+}
